@@ -3,7 +3,7 @@ rc522 consists of two Python classes for controlling an SPI RFID module "RC522" 
 
 [MIFARE datasheet](https://www.nxp.com/docs/en/data-sheet/MF1S50YYX_V1.pdf) datasheet.
 
-[MIFAEW Access Bits Calculator](http://calc.gmss.ru/Mifare1k/) Access Bits Calculator.
+[MIFARE Access Bits Calculator](http://calc.gmss.ru/Mifare1k/) Access Bits Calculator.
 
 ## Sectors? Blocks?
 Classic 1K MIFARE tag has **16 sectors**, each contains **4 blocks**. Each block has 16 bytes. All this stuff is indexed - you must count from zero. The library uses "**block addresses**", which are positions of blocks - so block address 5 is second block of second sector, thus it's block 1 of sector 1 (indexes). Block addresses 0, 1, 2, 3 are from the first sector - sector 0. Block addresses 4, 5, 6, 7 are from the second sector - sector 1, and so on. You should **not write** to first block - S0B0, because it contains manufacturer data. Each sector has it's **sector trailer**, which is located at it's last block - block 3. This block contains keys and access bits for corresponding sector. For more info, look at page 10 of the datasheet.
