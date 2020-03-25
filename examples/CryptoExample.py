@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import time
-from pirc522 import RFID
+from rc522 import RFID
 import pickle
 
 
