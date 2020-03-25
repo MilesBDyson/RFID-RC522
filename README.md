@@ -19,8 +19,4 @@ Connecting RC522 module to SPI is pretty easy. You can use [this neat website](h
 | RST            | 7         | P9\_23, GPIO\_49          |
 | 3.3V           | 8         | VDD\_3V3                  |
 
-## Usage
-The library is split to two classes - **RFID** and **RFIDUtil**. You can use only RFID, RFIDUtil just makes life a little bit better.
-explore the examples folder for methods used from the classes.
-
 ![pins](images/rfid-rc522.jpeg)
