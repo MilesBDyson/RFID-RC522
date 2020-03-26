@@ -18,8 +18,8 @@ Connecting RC522 module to SPI is pretty easy. You can use [Beaglebone Black Pin
 | MOSI           | 3         | P9\_18, SPI0\_D1          |
 | MISO           | 4         | P9\_21, SPI0\_D0          |
 | IRQ            | 5         | P9\_15, GPIO\_48          |
-| GND            | 6         | Ground                    |
+| GND            | 6         | P9\_01, Ground            |
 | RST            | 7         | P9\_23, GPIO\_49          |
-| 3.3V           | 8         | VDD\_3V3                  |
+| 3.3V           | 8         | P9\_03, VDD\_3V3          |
 
 ![pins](images/rfid-rc522.jpeg)
