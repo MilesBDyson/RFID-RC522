@@ -52,17 +52,17 @@ while run:
         # each sector is protected by two different keys, called A and B
         # each sector has 4 blocks
         # each block holds 16 bits
-        # each bit can be from 0 to 255 from the ascii chart
+        # each bit can be from 0 to 255 from the unicode chart
         
         # simple string of text 16 bits long
         new_data = "   coolstuff    "
-        # declare array to hold ascii values
+        # declare array to hold unicode values
         data = []
         # counter for where to insert into array
         i = 0
-        # iterate threw the simple string to convert each char into ascii
+        # iterate threw the simple string to convert each char into unicode
         for char in new_data:
-        	   # add the new ascii code to the data array
+        	   # add the new unicode code to the data array
         	   data.insert(i, ord(char))
         	   # move to next place in array for next insert
         	   i += 1
