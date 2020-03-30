@@ -33,14 +33,14 @@ def makechar(data):
     text = ''.join(chr(i) for i in data)
     return text
 
-def makeascii(data):
+def makeunicode(data):
     data = "{:<16}".format(data)
-    ascii = []
+    unicode = []
     i = 0
     for char in data:
-        ascii.insert(i, ord(char))
+        unicode.insert(i, ord(char))
         i += 1
-    return ascii
+    return unicode
 
 def makeblocks(data):
     block = [(data[i:i+16]) for i in range(0, len(data), 16)]
