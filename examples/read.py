@@ -49,13 +49,13 @@ while run:
         block3 = util.read_out(10)
         # get data from sector2 block4
         block4 = util.read_out(11)
-        # convert block1 ascii to character
+        # convert block1 unicode to character
         txt1 = ''.join(chr(i) for i in block1)
-        # convert block2 ascii to character
+        # convert block2 unicode to character
         txt2 = ''.join(chr(i) for i in block2)
-        # convert block3 ascii to character
+        # convert block3 unicode to character
         txt3 = ''.join(chr(i) for i in block3)
-        # convert block4 ascii to character
+        # convert block4 unicode to character
         txt4 = ''.join(chr(i) for i in block4)
         # put all the characters into one string
         text_data = txt1+txt2+txt3
