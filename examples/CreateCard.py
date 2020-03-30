@@ -13,7 +13,7 @@ import Adafruit_BBIO.GPIO as GPIO
 # each sector is protected by two different keys, called A and B
 # each sector has 4 blocks
 # each block holds 16 bits
-# each bit can be from 0 to 255 from the ascii chart
+# each bit can be from 0 to 255 from a unicode chart
 
 # Sector 0  ==  Reserved
 # Sector 1  ==  
